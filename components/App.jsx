@@ -31,7 +31,7 @@ export function NewMovieForm({ onAddMovie }) {
       <div>
         Title:{" "}
         <input
-          data-testid="tidtle"
+          data-testid="title"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
