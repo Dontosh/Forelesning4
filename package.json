@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "dev": "parcel index.html",
     "format": "prettier --write components/**/*.{jsx,js} *.{jsx,js} __tests__/**/*.{jsx,js}",
-    "format:check": "prettier --check components/**/*.{jsx,js} *.{jsx,js} __tests__/**/*.{jsx,js}"
+    "format:check": "prettier --check components/**/*.{jsx,js} *.{jsx,js} __tests__/**/*.{jsx,js}",
+    "verify": "jest --collectCoverage"
   },
   "keywords": [],
   "author": "",
@@ -27,7 +28,10 @@
     "react-router-dom": "^6.2.1"
   },
   "jest": {
-    "testEnvironment": "jsdom"
+    "testEnvironment": "jsdom",
+    "collectCoverageFrom": [
+      "*.jsx"
+    ]
   },
   "babel": {
     "presets": [
