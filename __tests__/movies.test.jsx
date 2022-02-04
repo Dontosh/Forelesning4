@@ -28,7 +28,7 @@ describe("movies application", () => {
       target: { value: "Movie 1" },
     });
     Simulate.change(element.querySelector("[data-testid=year]"), {
-      target: { value: "20222" },
+      target: { value: "2022" },
     });
     Simulate.submit(element.querySelector("form"));
     expect(onAddMovie).toHaveBeenCalledWith({
