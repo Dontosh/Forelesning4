@@ -6,6 +6,7 @@ on:
         - lectures/*
         - reference/*
         - main
+        - master
 
 jobs:
   test:
