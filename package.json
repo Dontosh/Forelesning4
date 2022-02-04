@@ -1,0 +1,38 @@
+{
+  "name": "forelesning4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel index.html",
+    "format": "prettier --write components/**/*.{jsx,js} *.{jsx,js} __tests__/**/*.{jsx,js}",
+    "format:check": "prettier --check components/**/*.{jsx,js} *.{jsx,js} __tests__/**/*.{jsx,js}"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "babel-jest": "^27.4.6",
+    "jest": "^27.4.7",
+    "parcel": "^2.2.1",
+    "prettier": "^2.5.1"
+  },
+  "dependencies": {
+    "jest-mock": "^27.4.6",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^6.2.1"
+  },
+  "jest": {
+    "testEnvironment": "jsdom"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-react",
+      "@babel/preset-env"
+    ]
+  }
+}
